@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class complainpage extends StatefulWidget {
-  const complainpage({super.key});
+class issuespage extends StatefulWidget {
+  const issuespage({super.key});
 
   @override
-  State<complainpage> createState() => _complainpageState();
+  State<issuespage> createState() => _issuespageState();
 }
 
-class _complainpageState extends State<complainpage> {
+class _issuespageState extends State<issuespage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('complaint'),
+        title: Text('issues'),
         backgroundColor: Colors.amberAccent,
       ),
       body: Center(
@@ -25,7 +25,7 @@ class _complainpageState extends State<complainpage> {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  labelText: "complaint",
+                  labelText: "contractor",
                 ),
               ),
               SizedBox(height: 20),
@@ -35,6 +35,16 @@ class _complainpageState extends State<complainpage> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   labelText: "date",
+                ),
+              ),
+
+              SizedBox(height: 20),
+              TextFormField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  labelText: "description",
                 ),
               ),
 

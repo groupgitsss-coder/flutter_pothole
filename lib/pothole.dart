@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class complainpage extends StatefulWidget {
-  const complainpage({super.key});
+class potholepage extends StatefulWidget {
+  const potholepage({super.key});
 
   @override
-  State<complainpage> createState() => _complainpageState();
+  State<potholepage> createState() => _potholepageState();
 }
 
-class _complainpageState extends State<complainpage> {
+class _potholepageState extends State<potholepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('complaint'),
+        title: Text('contractor'),
         backgroundColor: Colors.amberAccent,
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(40.0),
+          padding: const EdgeInsets.all(30.0),
           child: Column(
             children: [
               TextFormField(
@@ -25,7 +25,16 @@ class _complainpageState extends State<complainpage> {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  labelText: "complaint",
+                  labelText: "lattitude",
+                ),
+              ),
+              SizedBox(height: 20),
+              TextFormField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  labelText: "longitude",
                 ),
               ),
               SizedBox(height: 20),
