@@ -8,6 +8,8 @@ class loginpage extends StatefulWidget {
 }
 
 class _loginpageState extends State<loginpage> {
+  TextEditingController usernameController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,6 +23,7 @@ class _loginpageState extends State<loginpage> {
           child: Column(
             children: [
               TextFormField(
+                controller: usernameController,
                 decoration: InputDecoration(
                   labelText: "username"
                 ),
@@ -28,6 +31,7 @@ class _loginpageState extends State<loginpage> {
               ),
               SizedBox(height: 20,),
               TextFormField(
+                controller: passwordController,
                 decoration: InputDecoration(
                   labelText: "password"
                 ),
